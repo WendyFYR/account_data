@@ -27,7 +27,7 @@ eureka:
   instance:
     leaseRenewalIntervalInSeconds: 5   # DO NOT DO THIS IN PRODUCTION
     prefer-ip-address: true
-    instance-id: http://9.98.12.57:31907
+    instance-id: http://9.98.12.57:32627
 #  3. If using the Angel release-train ONLY, give the process a unique instance id 
 #     so that multiple instances can register when running on SAME host.  This is
 #     not needed since release-train Brixton.
