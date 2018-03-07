@@ -23,12 +23,12 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://9.98.12.57:30271/eureka/
+      defaultZone: http://10.4.68.204:32256/eureka/
   instance:
     leaseRenewalIntervalInSeconds: 5   # DO NOT DO THIS IN PRODUCTION
     prefer-ip-address: true
-    instance-id: http://9.98.12.57:32627
-#  3. If using the Angel release-train ONLY, give the process a unique instance id 
+    instance-id: http://10.4.68.204:32256
+#  3. If using the Angel release-train ONLY, give the process a unique instance id
 #     so that multiple instances can register when running on SAME host.  This is
 #     not needed since release-train Brixton.
 #     NOTE-1: spring.application.instance_id is only set when run on Cloud Foundry,
@@ -36,7 +36,3 @@ eureka:
 #     NOTE-2: Syntax ${x:${y}} = use $x if set, otherwise use $y
 #   metadataMap:
 #     instanceId: ${spring.application.name}:${spring.application.instance_id:${server.port}}
-      
-
-
-
